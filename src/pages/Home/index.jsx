@@ -24,7 +24,7 @@ export function Home() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch(`https://api.github.com/users/${studentName}`);
+      const response = await fetch(`https://api.github.com/users/${student.name}`);
       const data = await response.json();
       console.log("DADOS ===> ", data);
 
